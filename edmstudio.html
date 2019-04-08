@@ -1,31 +1,123 @@
 <!doctype html>
 <html>
   <head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+   $(".logo").hover(
+     function() {
+	    $(this).find("span").fadeToggle();
+    } )
+	
+	$(".poster").hover(
+     function() {
+	    $(this).height($(this).height()*2.6);
+	    $(this).find("#p1").fadeOut();
+		$(this).find("#p2").fadeIn();
+     },function() {
+	    $(this).height($(this).height()/2.6);
+		$(this).find("#p2").fadeOut(1);
+		$(this).find("#p1").fadeIn(500);
+     })
+	 
+	 $(".stop").hover(
+     function() {
+	    $(this).height($(this).height()*2.1);
+	    $(this).find("#s1").fadeOut();
+		$(this).find("#s2").fadeIn();
+     },function() {
+	    $(this).height($(this).height()/2.1);
+		$(this).find("#s2").fadeOut(1);
+		$(this).find("#s1").fadeIn(500);
+     })
+	
+	});
+   </script>
+  
     <meta charset="utf-8">
 	<title>EDMSTUDIO</title>
 	<style>
 	  footer {text-align:center}
-	  article{display:block;padding:6px; text-align:center}
+	  div{display:block;text-align:center}
 	  body{background-image:url("https://upload.cc/i1/2019/03/18/0gvVfn.jpg");background-attachment:fixed;background-repeat:no-repeat;background-position:center;background-color=transparent}
+	  h1.normal{font-style:italic;text-shadow:3px 3px 3px #cccccc;}
+	  
+	  .logo span{
+	      position:absolute;
+		  top:150px;
+		  left:0;
+		  width:100%;
+		}
+	   .logo span:last-child{
+           display:none;
+	     }		 
+		
+	   .poster span:last-child{
+          position:absolute;
+		  top:350px;
+		  left:0;
+		  width:100%;
+		  display:none;
+	     } 
+		 
+	   .stop span:last-child{
+          position:absolute;
+		  top:550px;
+		  left:0;
+		  width:100%;
+		  display:none;
+	     }  
+		 
+ 
 	</style>
+	
   </head>
   <body>
     <header style="display:block; clear:both; padding:5px; text-align:center;line-height:10%">
 	  <h1>EDM STUDIO</h1>
 	  <h6>THE STUDIO THAT MAY DISTORY YOUR DREAM</h6>
 	  <hr size="5" align="center" noshade width="90%" color="black">
-	  <h2>What we can do</h2>
+	  
 	</header>
 	
-	<article>
-	  <h1><i>Logo Design</i></h1>
-	  <a href="https://www.facebook.com/hsinhousemo/"><img src="https://upload.cc/i1/2019/03/18/gTODXq.png" style="width:300px;height:400px;align:center" border="2" ></a>
-	  <h1><i>Poster Design</i></h1>
-	  <img src="https://upload.cc/i1/2019/03/18/fy9RHw.png" style="width:500px;height:750px;align:center" border="2" >
-	  <h1><i>Stop Motion</i></h1>
-	  <iframe width="702" height="395" src="https://www.youtube.com/embed/qIMDLmodjqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</article>
+	<div>
+	  <font style="font-size:30px;font-style:;font-family:Trebuchet MS">What we can do</font>
+    </div>
+	
+	
+   
+    <div class="logo" style="background:rgba(233,158,47,0.7);height:200px;size:10px 10px"> 
+ 
+	   <span style="font-size:100px;line-height:200px;text-shadow:5px 5px 5px #cccccc;"><i>Logo Design</i></span>
+	   <span>
+	   <a href="https://www.facebook.com/hsinhousemo/"><img src="https://upload.cc/i1/2019/04/06/wel8hr.png"></a>
+	   </span>
+ 
+	 </div>  
+	 
+	 <div class="poster" style="background:rgba(132,205,239,0.7);height:200px;"> 
+ 
+	   <span id="p1" style="font-size:100px;line-height:200px;text-shadow:5px 5px 5px #cccccc;"><i>Poster Design</i></span>
+	   <span id="p2">
+	   <img src="https://upload.cc/i1/2019/03/18/fy9RHw.png" width="400" height="500"></a>
+	   </span>
+ 
+	 </div>  
+	 
+	  <div class="stop" style="background:rgba(149,238,217,0.7);height:200px;"> 
+ 
+	   <span id="s1" style="font-size:100px;line-height:200px;text-shadow:5px 5px 5px #cccccc;"><i>Stop Motion</i></span>
+	   <span id="s2">
+	   <iframe width="702" height="395" src="https://www.youtube.com/embed/qIMDLmodjqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	   </span>
+ 
+	 </div>  
+
+
+    
+
 	<footer>
 	  <p><small>EDMSTUDIO COPYRIGHT2019</small></p>
+	 </footer>
   </body>
 </html>
