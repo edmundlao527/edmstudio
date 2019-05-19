@@ -1,0 +1,31 @@
+footer {text-align:center}
+div{display:block;text-align:center}
+body{background-image:url("https://upload.cc/i1/2019/03/18/0gvVfn.jpg");background-attachment:fixed;background-repeat:no-repeat;background-position:center;background-color=transparent}
+h1.normal{font-style:italic;text-shadow:3px 3px 3px #cccccc;}
+
+.logo span{
+  position:absolute;
+  top:150px;
+  left:0;
+  width:100%;
+}
+.logo span:last-child{
+   display:none;
+ }		 
+
+.poster span:last-child{
+  position:absolute;
+  top:350px;
+  left:0;
+  width:100%;
+  display:none;
+ } 
+ 
+.stop span:last-child{
+  position:absolute;
+  top:550px;
+  left:0;
+  width:100%;
+  display:none;
+ }  
+ 
