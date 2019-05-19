@@ -1,76 +1,13 @@
 <!doctype html>
 <html>
   <head>
-  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-  <script>
-  $(document).ready(function() {
-   $(".logo").hover(
-     function() {
-	    $(this).find("span").fadeToggle();
-    } )
-	
-	$(".poster").hover(
-     function() {
-	    $(this).height($(this).height()*2.6);
-	    $(this).find("#p1").fadeOut();
-		$(this).find("#p2").fadeIn();
-     },function() {
-	    $(this).height($(this).height()/2.6);
-		$(this).find("#p2").fadeOut(1);
-		$(this).find("#p1").fadeIn(500);
-     })
-	 
-	 $(".stop").hover(
-     function() {
-	    $(this).height($(this).height()*2.1);
-	    $(this).find("#s1").fadeOut();
-		$(this).find("#s2").fadeIn();
-     },function() {
-	    $(this).height($(this).height()/2.1);
-		$(this).find("#s2").fadeOut(1);
-		$(this).find("#s1").fadeIn(500);
-     })
-	
-	});
-   </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="nav.js"></script>
   
-    <meta charset="utf-8">
-	<title>EDMSTUDIO</title>
-	<style>
-	  footer {text-align:center}
-	  div{display:block;text-align:center}
-	  body{background-image:url("https://upload.cc/i1/2019/03/18/0gvVfn.jpg");background-attachment:fixed;background-repeat:no-repeat;background-position:center;background-color=transparent}
-	  h1.normal{font-style:italic;text-shadow:3px 3px 3px #cccccc;}
-	  
-	  .logo span{
-	      position:absolute;
-		  top:150px;
-		  left:0;
-		  width:100%;
-		}
-	   .logo span:last-child{
-           display:none;
-	     }		 
-		
-	   .poster span:last-child{
-          position:absolute;
-		  top:350px;
-		  left:0;
-		  width:100%;
-		  display:none;
-	     } 
-		 
-	   .stop span:last-child{
-          position:absolute;
-		  top:550px;
-		  left:0;
-		  width:100%;
-		  display:none;
-	     }  
-		 
- 
-	</style>
-	
+  <meta charset="utf-8">
+  <title>EDMSTUDIO</title>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+
   </head>
   <body>
     <header style="display:block; clear:both; padding:5px; text-align:center;line-height:10%">
@@ -99,7 +36,7 @@
  
 	   <span id="p1" style="font-size:100px;line-height:200px;text-shadow:5px 5px 5px #cccccc;"><i>Poster Design</i></span>
 	   <span id="p2">
-	   <img src="https://upload.cc/i1/2019/03/18/fy9RHw.png" width="400" height="500"></a>
+	   <img src="https://upload.cc/i1/2019/03/18/fy9RHw.png" width="400" height="500"></img>
 	   </span>
  
 	 </div>  
@@ -118,6 +55,7 @@
 
 	<footer>
 	  <p><small>EDMSTUDIO COPYRIGHT2019</small></p>
+	  <a href="https://edmundlao527.github.io/edmstudio/map.html">¦a¹Ï</a>
 	 </footer>
   </body>
 </html>
